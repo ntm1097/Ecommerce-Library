@@ -18,10 +18,11 @@ export default function Book({ book }) {
       }, 300);
     };
     return () => {
+      // when the componenet mounts
       mountedRef.current = false;
     };
   });
-
+   
   return (
     <div className="book">
       {img ? (
